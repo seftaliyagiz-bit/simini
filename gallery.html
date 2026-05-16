@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galleria — Simini Brasserie de la mer Torino</title>
+  <meta name="description" content="La galleria fotografica di Simini — ostriche, plateau royal e l'atmosfera della nostra brasserie a Torino.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-main">Simini</span>
+      <span class="brand-sub">Brasserie de la mer</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="about.html">Chi siamo</a></li>
+      <li><a href="menu.html">Menù</a></li>
+      <li><a href="gallery.html" class="active">Galleria</a></li>
+      <li><a href="contact.html">Contatti</a></li>
+      <li><a href="contact.html" class="nav-cta">Prenota</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <a href="gallery.html" class="active">IT</a>
+      <span class="lang-sep">/</span>
+      <a href="en/gallery.html">EN</a>
+    </div>
+    <div class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <span class="section-label">Immagini</span>
+    <h1 class="section-title">Galleria</h1>
+    <p class="section-body" style="margin:0 auto;">
+      Un assaggio dell'atmosfera di Simini — il mare a Torino
+    </p>
+  </header>
+
+  <!-- GALLERY CONTENT -->
+  <main class="gallery-page">
+    <div class="gallery-page-inner">
+
+      <div class="gallery-full-grid">
+        <div class="gallery-full-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700&auto=format&fit=crop"
+            alt="Ostriche fresche su ghiaccio"
+            loading="lazy"
+          >
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-full-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1584182896049-85bbd1c57d7c?w=700&auto=format&fit=crop"
+            alt="Plateau Royal di Simini"
+            loading="lazy"
+          >
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-full-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=700&auto=format&fit=crop"
+            alt="Selezione di frutti di mare"
+            loading="lazy"
+          >
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-full-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1569131629928-68a2c0e0c5ca?w=700&auto=format&fit=crop"
+            alt="Dettaglio crostacei freschi"
+            loading="lazy"
+          >
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-full-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&auto=format&fit=crop"
+            alt="Ambiente della brasserie"
+            loading="lazy"
+          >
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-full-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&auto=format&fit=crop"
+            alt="Eleganza in tavola"
+            loading="lazy"
+          >
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-coming-soon fade-in">
+        <i class="fa-regular fa-images"></i>
+        <p>Le foto del locale e dei piatti saranno presto disponibili.<br>
+        Nel frattempo, seguici su Instagram per scoprire l'atmosfera di Simini.</p>
+        <div style="margin-top:1.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="https://www.instagram.com/" class="btn-ocean" style="font-size:0.85rem;padding:0.6rem 1.4rem;">
+            <i class="fa-brands fa-instagram"></i> Seguici su Instagram
+          </a>
+          <a href="contact.html" class="btn-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">
+            <i class="fa-regular fa-calendar"></i> Prenota un tavolo
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-main">Simini</span>
+        <span class="brand-sub">Brasserie de la mer</span>
+        <p>Il miglior ristorante di frutti di mare crudi a Torino. Ostriche Belon fresche dalla Bretagna, selezionate dal chef Michel.</p>
+        <div class="footer-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <span>4.6 / 5 &nbsp;·&nbsp; 623 recensioni Google</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigazione</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Chi siamo</a></li>
+          <li><a href="menu.html">Menù</a></li>
+          <li><a href="gallery.html">Galleria</a></li>
+          <li><a href="contact.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-hours">
+        <h4>Orari</h4>
+        <p>
+          Lun: 17:00–23:30<br>
+          Mar: 17:00–23:30<br>
+          Mer: 17:00–23:30<br>
+          Gio: 17:00–23:30<br>
+          Ven: 17:00–23:30<br>
+          Sab: 17:00–23:30<br>
+          <span class="closed">Dom: Chiuso</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="https://maps.google.com/?q=Corso+Racconigi+30+Torino"><i class="fa-solid fa-location-dot" style="width:14px;color:var(--ocean);margin-right:6px;"></i>Corso Racconigi 30, Torino</a></li>
+          <li><a href="tel:+393356400423"><i class="fa-solid fa-phone" style="width:14px;color:var(--ocean);margin-right:6px;"></i>+39 335 640 0423</a></li>
+          <li><a href="https://wa.me/393356400423"><i class="fa-brands fa-whatsapp" style="width:14px;color:var(--ocean);margin-right:6px;"></i>WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom-left">&copy; 2024 Simini Brasserie de la mer &mdash; Torino</span>
+      <div class="footer-bottom-right">
+        <a href="https://wa.me/393356400423" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Reservations — Simini Brasserie de la mer Turin</title>
+  <meta name="description" content="Reserve a table at Simini. Corso Racconigi 30, Turin. Phone: +39 335 640 0423. Open Mon–Sat 5:00 pm–11:30 pm.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity:1; transform:none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-main">Simini</span>
+      <span class="brand-sub">Brasserie de la mer</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="about.html">About us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Reserve</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <a href="../contact.html">IT</a>
+      <span class="lang-sep">/</span>
+      <a href="contact.html" class="active">EN</a>
+    </div>
+    <div class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <span class="section-label">Come visit us</span>
+    <h1 class="section-title">Contact</h1>
+    <p class="section-body" style="margin:0 auto;">
+      Reservation recommended — limited seating
+    </p>
+  </header>
+
+  <!-- CONTACT CONTENT -->
+  <main class="contact-page">
+    <div class="contact-page-inner">
+
+      <!-- Info + Map -->
+      <div class="fade-in">
+        <div class="contact-detail-card">
+          <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="detail-text">
+            <h4>Address</h4>
+            <p>Corso Racconigi 30<br>10139 Turin, Italy</p>
+          </div>
+        </div>
+        <div class="contact-detail-card">
+          <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="detail-text">
+            <h4>Phone</h4>
+            <a href="tel:+393356400423">+39 335 640 0423</a>
+          </div>
+        </div>
+        <div class="contact-detail-card">
+          <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="detail-text">
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/393356400423">+39 335 640 0423</a>
+          </div>
+        </div>
+        <div class="contact-detail-card">
+          <div class="detail-icon"><i class="fa-regular fa-clock"></i></div>
+          <div class="detail-text">
+            <h4>Opening hours</h4>
+            <p>
+              Monday – Saturday: 5:00 pm – 11:30 pm<br>
+              <span style="color:var(--text-muted);">Sunday: Closed</span>
+            </p>
+          </div>
+        </div>
+        <div class="contact-detail-card">
+          <div class="detail-icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="detail-text">
+            <h4>Useful information</h4>
+            <p>
+              Credit cards accepted<br>
+              Gluten-free options available<br>
+              Reservation recommended
+            </p>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe
+            title="Simini Turin Map"
+            src="https://maps.google.com/maps?q=Simini+Brasserie+de+la+mer+Torino+Corso+Racconigi+30&output=embed"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Reservation Form -->
+      <div class="contact-form-wrap fade-in">
+        <h2>Reserve a table</h2>
+        <p>Fill in the form and we will contact you as soon as possible to confirm your reservation.</p>
+        <form class="reservation-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">First name *</label>
+              <input type="text" id="nome" name="nome" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="cognome">Last name</label>
+              <input type="text" id="cognome" name="cognome" placeholder="Your last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Phone</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+39 ...">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="data">Date *</label>
+              <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+              <label for="ora">Time *</label>
+              <select id="ora" name="ora" required>
+                <option value="">Choose a time</option>
+                <option>5:00 pm</option>
+                <option>5:30 pm</option>
+                <option>6:00 pm</option>
+                <option>6:30 pm</option>
+                <option>7:00 pm</option>
+                <option>7:30 pm</option>
+                <option>8:00 pm</option>
+                <option>8:30 pm</option>
+                <option>9:00 pm</option>
+                <option>9:30 pm</option>
+                <option>10:00 pm</option>
+                <option>10:30 pm</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="persone">Number of guests *</label>
+            <select id="persone" name="persone" required>
+              <option value="">Select</option>
+              <option>1 guest</option>
+              <option>2 guests</option>
+              <option>3 guests</option>
+              <option>4 guests</option>
+              <option>5 guests</option>
+              <option>6 guests</option>
+              <option>7–10 guests</option>
+              <option>More than 10</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="messaggio">Notes or special requests</label>
+            <textarea id="messaggio" name="messaggio" placeholder="Allergies, special occasions, particular requests..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <i class="fa-solid fa-paper-plane"></i> Send request
+          </button>
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;text-align:center;">
+            Alternatively, call or WhatsApp us at <a href="tel:+393356400423" style="color:var(--ocean);">+39 335 640 0423</a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-main">Simini</span>
+        <span class="brand-sub">Brasserie de la mer</span>
+        <p>The finest raw seafood restaurant in Turin. Fresh Belon oysters from Brittany, personally selected by chef Michel.</p>
+        <div class="footer-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <span>4.6 / 5 &nbsp;·&nbsp; 623 Google reviews</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-hours">
+        <h4>Hours</h4>
+        <p>
+          Mon: 5:00–11:30 pm<br>
+          Tue: 5:00–11:30 pm<br>
+          Wed: 5:00–11:30 pm<br>
+          Thu: 5:00–11:30 pm<br>
+          Fri: 5:00–11:30 pm<br>
+          Sat: 5:00–11:30 pm<br>
+          <span class="closed">Sun: Closed</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://maps.google.com/?q=Corso+Racconigi+30+Torino"><i class="fa-solid fa-location-dot" style="width:14px;color:var(--ocean);margin-right:6px;"></i>Corso Racconigi 30, Turin</a></li>
+          <li><a href="tel:+393356400423"><i class="fa-solid fa-phone" style="width:14px;color:var(--ocean);margin-right:6px;"></i>+39 335 640 0423</a></li>
+          <li><a href="https://wa.me/393356400423"><i class="fa-brands fa-whatsapp" style="width:14px;color:var(--ocean);margin-right:6px;"></i>WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom-left">&copy; 2024 Simini Brasserie de la mer &mdash; Turin</span>
+      <div class="footer-bottom-right">
+        <a href="https://wa.me/393356400423" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
